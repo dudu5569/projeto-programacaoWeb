@@ -1,0 +1,33 @@
+#tarefas{
+    width: 530px;
+    height: fit-content;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin: auto;
+    padding: 5px;
+}
+
+#tarefas2{
+    margin: auto;
+    width: 530px;
+    height: 200px;
+    padding: 5px;
+    text-align: center;
+    border-left: 1px solid black;
+    border-right:1px solid black;
+    border-bottom: 1px solid black;
+}
+
+label{
+    margin: 15px
+    
+}
+
+h1{
+    text-align: center;
+}
+
+select{
+    margin: 15px;
+}
