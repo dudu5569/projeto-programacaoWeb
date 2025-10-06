@@ -15,24 +15,33 @@
 </div>
 
 <div id="tarefas2">
-    <input type="text" name="" id="descricao-tarefa" placeholder="Ex: Tarefa da Faculdade">
-    <select name="" id="" aria-placeholder="">
+    <input type="text" id="descricao-tarefa" placeholder="Ex: Tarefa da Faculdade">
+    <select name="" id="cat_tarefa" aria-placeholder="">
         <option value="" disabled selected></option>
-        <option value="">Trabalho</option>
-        <option value="">Estudos</option>
-        <option value="">Lazer</option>
-        <option value="">Imprevistos</option>
-        <option value="">Favores</option>
+        <option value="Trabalho">Trabalho</option>
+        <option value="Estudos">Estudos</option>
+        <option value="Lazer">Lazer</option>
+        <option value="Imprevistos">Imprevistos</option>
+        <option value="Favores">Favores</option>
     </select>
 
-    <select name="" id="">
+    <select name="" id="importancia-tarefa">
         <option value="" disabled selected></option>
-        <option value="">Não é urgente</option>
-        <option value="">Importante mas não urgente</option>
-        <option value="">Urgente</option>
+        <option value="Não é urgente">Não é urgente</option>
+        <option value="Importante mas não urgente">Importante mas não urgente</option>
+        <option value="Urgente">Urgente</option>
     </select>
 
-    <button>Enviar</button>
+    <button id="botao_submit">Enviar</button>
+</div>
+
+<div id="tarefas_escritas">
+    <div id="tarefas_a_fazer" class="hide">
+        <p class="descricao_tarefa_afazer"></p>
+        <p class="categoria_tarefa_afazer"></p>
+        <p class="importancia_tarefa_afazer"></p>
+        <button class="delete">Deletar</button>
+    </div>
 </div>
     
 <script src="js/index.js"></script>
