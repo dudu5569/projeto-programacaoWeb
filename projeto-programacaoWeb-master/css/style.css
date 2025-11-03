@@ -1,0 +1,61 @@
+#tarefas{
+    width: 530px;
+    height: fit-content;
+    border: 1px solid black;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#tarefas2{
+    margin: auto;
+    width: 530px;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    
+}
+
+#tarefas_escritas{
+    margin: auto;
+    width: 530px;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
+    border-left: 1px solid black;
+    border-right:1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#tarefas_a_fazer{
+    background-color: gray;
+    width: 400px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 5px;
+}
+
+#botao_submit{
+    margin-bottom: 10px;
+}
+
+.hide{
+    display: none !important;
+}
+
+
+label{
+    margin: 15px
+    
+}
+
+h1{
+    text-align: center;
+}
+
+select{
+    margin: 15px;
+}
