@@ -18,7 +18,7 @@ document.getElementById("botao_submit").addEventListener("click", function(){
     nova_tarefa.remove();
     });
 
-    document.getElementById("tarefas_escritas").appendChild(nova_tarefa);   
+    document.getElementById("tarefas").appendChild(nova_tarefa);   
 
     document.getElementById("descricao-tarefa").value = "";
     document.getElementById("cat_tarefa").value = "";

@@ -1,11 +1,10 @@
 #tarefas{
     width: 530px;
     height: fit-content;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border: 1px solid black;
     margin: auto;
     padding: 10px;
+    text-align: center;
 }
 
 #tarefas2{
@@ -14,8 +13,8 @@
     height: fit-content;
     padding: 10px;
     text-align: center;
-    border-left: 1px solid black;
-    border-right:1px solid black;
+    border: 1px solid black;
+    
 }
 
 #tarefas_escritas{
@@ -37,6 +36,10 @@
     justify-content: space-between;
     margin: auto;
     padding: 5px;
+}
+
+#botao_submit{
+    margin-bottom: 10px;
 }
 
 .hide{
