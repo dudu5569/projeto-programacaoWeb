@@ -1,20 +1,30 @@
-#tarefas{
-    width: 530px;
-    height: fit-content;
+input{
+    border-radius: 5px;
     border: 1px solid black;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
+    margin: 5px;
 }
 
-#tarefas2{
-    margin: auto;
-    width: 530px;
-    height: fit-content;
-    padding: 10px;
-    text-align: center;
+select{
+    border-radius: 5px;
     border: 1px solid black;
-    
+}
+
+
+#textos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -20px;
+}
+
+#tarefas{
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid black;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+
 }
 
 #tarefas_escritas{
@@ -29,23 +39,49 @@
 }
 
 #tarefas_a_fazer{
-    background-color: gray;
-    width: 400px;
+    background-color: white;
+    width: 600px;
     height: fit-content;
     display: flex;
     justify-content: space-between;
-    margin: auto;
+    margin: auto auto 5px auto;
     padding: 5px;
+    border: 1px solid black;
+}
+
+#tarefas_a_fazer p{
+    text-align: center;
 }
 
 #botao_submit{
-    margin-bottom: 10px;
+    display: block;
+    margin: auto auto 15px auto;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(0, 173, 0);
+    color: white;
+    width: 60px;
+    height: 30px;
 }
 
 .hide{
     display: none !important;
 }
 
+.delete{
+    width: 75px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    color: white;
+    margin-top: 10px;
+}
+
+.delete:hover{
+    filter: opacity(50%);
+    cursor: pointer;
+}
 
 label{
     margin: 15px
