@@ -9,6 +9,9 @@ select{
     border: 1px solid black;
 }
 
+h3{
+    text-align: center;
+}
 
 #textos{
     display: flex;
@@ -90,8 +93,72 @@ label{
 
 h1{
     text-align: center;
+    color: black;
 }
 
 select{
     margin: 15px;
+}
+
+.trilho{
+    width: 70px;
+    height: 35px;
+    background-color: #c3c3c3;
+    border-radius: 150px;
+    border: 1px solid black;
+    margin: auto auto 15px auto;
+    cursor: pointer;
+    position: relative;
+}
+
+.trilho .indicador{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    margin-left: 0;
+    transition: 0.5s;
+}
+
+
+.trilho.light{
+    background-color: #4d4d4d;
+}
+
+.trilho.light .indicador{
+    left: 35px;
+    background-color: black;
+}
+
+body.light{
+    background-color: black;
+}
+
+body.light h1 {
+    color: white;
+}
+
+body.light h3 {
+    color: white;
+}
+
+body.light label{
+    color: white;
+}
+
+
+body.light #tarefas{
+    background-color: black;
+    border: 1px solid white;
+}
+
+body.light #tarefas_a_fazer{
+    background-color: black;
+    border: 1px solid white;
+}
+
+body.light #tarefas_a_fazer p{
+    color: white;
 }
