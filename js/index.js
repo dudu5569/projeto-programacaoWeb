@@ -100,20 +100,18 @@ trilho.addEventListener('click',()=>{
 
 carregarTarefas();
 
-document.getElementById("pesquisar").addEventListener("click", function(){
-    let categoria_selecionada = this.value;
-    let tarefas = document.querySelectorAll("#tarefas . tarefa_item");
+document.getElementById("filtro_categoria").addEventListener("change", function () {
+    let categoriaSelecionada = this.value;
+    let tarefas = document.querySelectorAll(".tarefa_item");
 
-    tarefas.forEach(tarefa =>{
-        let categoria_tarefa = tarefa.querySelector(".categoria_tarefa_afazer").textContent;
+    tarefas.forEach(tarefa => {
+        let categoriaTarefa = tarefa.querySelector(".categoria_tarefa_afazer").textContent;
 
-        if(categoria_selecionada === "" || categoria_tarefa === categoria_selecionada){
-            tarefa.style.display = "block";
-        }else{
+        // Exibe todas se o filtro estiver vazio
+        if (categoriaSelecionada === "" || categoriaTarefa === categoriaSelecionada) {
+            tarefa.style.display = "flex"; // use flex, block ou inline-flex dependendo do seu CSS
+        } else {
             tarefa.style.display = "none";
         }
     });
-
 });
-
-
