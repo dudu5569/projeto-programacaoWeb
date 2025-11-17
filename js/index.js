@@ -23,6 +23,7 @@ document.getElementById("botao_submit").addEventListener("click", function(){
     let nova_tarefa = template.cloneNode(true);
     nova_tarefa.classList.remove("hide");
     nova_tarefa.removeAttribute("class");
+    nova_tarefa.classList.add("tarefa_item");
 
     nova_tarefa.querySelector(".descricao_tarefa_afazer").textContent = descricao_tarefa;
     nova_tarefa.querySelector(".categoria_tarefa_afazer").textContent = categoria_tarefa;
@@ -55,6 +56,7 @@ function carregarTarefas() {
         let nova_tarefa = template.cloneNode(true);
         nova_tarefa.classList.remove("hide");
         nova_tarefa.removeAttribute("class");
+        nova_tarefa.classList.add("tarefa_item");
 
         nova_tarefa.querySelector(".descricao_tarefa_afazer").textContent = tarefa.descricao;
         nova_tarefa.querySelector(".categoria_tarefa_afazer").textContent = tarefa.categoria;
@@ -72,6 +74,7 @@ function carregarTarefas() {
         document.getElementById("tarefas").appendChild(nova_tarefa);
     });
 }
+
 
 let trilho = document.getElementById('trilho');
 let body = document.querySelector('body');
@@ -95,8 +98,22 @@ trilho.addEventListener('click',()=>{
 
 })
 
-
-
-
-
 carregarTarefas();
+
+document.getElementById("pesquisar").addEventListener("click", function(){
+    let categoria_selecionada = this.value;
+    let tarefas = document.querySelectorAll("#tarefas . tarefa_item");
+
+    tarefas.forEach(tarefa =>{
+        let categoria_tarefa = tarefa.querySelector(".categoria_tarefa_afazer").textContent;
+
+        if(categoria_selecionada === "" || categoria_tarefa === categoria_selecionada){
+            tarefa.style.display = "block";
+        }else{
+            tarefa.style.display = "none";
+        }
+    });
+
+});
+
+
